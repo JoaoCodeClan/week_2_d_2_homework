@@ -15,4 +15,9 @@ def test_bear_name
   assert_equal("Yogi",@my_bear.name)
 end
 
+def test_bear_takes_fish_from_river
+   @my_bear.takes_fish(20)
+  assert_equal([20],@my_bear.stomach)
+end
+
 end

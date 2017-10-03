@@ -1,4 +1,5 @@
 require_relative("../river.rb")
+require_relative("../bears.rb")
 require("minitest/autorun")
 require("minitest/rg")
 
@@ -7,7 +8,7 @@ class TestRiver < MiniTest::Test
 def setup
 
   @my_river = River.new("Amazon",100)
-
+ @brown_bear = Bears.new("Brownie", [])
 end
 
 def test_river_name
