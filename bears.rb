@@ -7,9 +7,17 @@ class Bears
     @stomach = []
   end
 
-def takes_fish(amount)
-  @stomach.push(amount)
-  return @stomach
-end
+  def takes_fish(amount)
+    @stomach.push(amount)
+    return @stomach
+  end
+
+  def roar
+    return "ROAR"
+  end
+
+  def food_count
+    return @stomach.count
+  end
 
 end

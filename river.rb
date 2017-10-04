@@ -7,8 +7,15 @@ class River
 
   end
 
-def count
-  return @amount_fish
-end
+  def count
+    return @amount_fish
+  end
+
+  def bear_takes_fish(amount)
+    @bears.takes_fish(amount)
+    @amount_fish -= amount
+      return @amount_fish
+    end
+
 
 end
